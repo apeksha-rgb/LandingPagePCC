@@ -1,0 +1,217 @@
+*{
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT','Trebuchet MS', sans-serif;
+    box-sizing: border-box;
+
+}
+html, body{
+    width: 100%;
+    height: 100%;
+}
+#main{
+    display: flex;
+    /* background-color: blue; */
+    width: 100%;
+    height: 100%;
+}
+
+#left{
+    
+    
+    background-image: url(un.png);
+    background-position: center;
+    background-size: cover;
+    
+    /* background-color: #B90B0B; */
+    position: relative;
+    width: 45%;
+    height: 100%;
+}
+#navigationleft{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 20px 70px;
+    
+}
+#navright{
+    display: flex;
+    justify-content: center;
+}
+#navright a{
+    margin-right: 20px ;
+    text-decoration:none ;
+    /* color: black; */
+    font-weight: 500;
+}
+#left #textCenter{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+}
+#textCenter h1{
+    font-size: 45px;
+    font-weight: 500;
+
+
+}
+#textCenter h5{
+    opacity: .6;
+    font-weight: 200;
+    font-size: 18px;
+    padding-top: 10px;
+}
+#textCenter p{
+    opacity: .6;
+    font-size: 12px;
+    line-height: 20px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+
+}
+#textCenter a{
+    text-decoration: none ;
+    /* color:black; */
+    border-bottom: 1px solid white;
+    padding-bottom: 10px;
+    /* opacity: .6; */
+    font-weight: 500;  
+
+}
+#right{
+    /* display: flex; */
+    position: relative;
+    background-color: black;
+    width: 55%;
+    height: 100%;
+}
+
+#right #top{
+    position: absolute;
+    height: 100%;
+    background-image: url(termite-00.jpeg);
+    background-size: cover;
+    background-position: center;
+    opacity: .3;
+    /* background-color: green; */
+    width: 100%;
+
+}
+#CenterForm{
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform:translate(-50%,-50%) ;
+}
+#CenterForm{
+    background-color: #B90B0B;
+    opacity: .4;
+    height: 80%;
+    width: 70%;
+    /* height: 500px;
+    width: 400px; */
+   
+    color:white;
+
+}
+#right #form{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    
+}
+#form{
+    height: 90%;
+    width: 70%;
+    display: table-column;
+}
+#form h1{
+    padding-bottom: 10px;
+}
+input{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 80%;
+    opacity: .5;
+    color: black;
+}
+#btn{
+    background-color:#B90B0B ;
+    width: 100px;
+    height: 30px;
+    border: none;
+    border-radius: 10%;
+    
+    
+}
+
+@media(max-width:500px)
+{
+   #main{
+    flex-direction: column;
+   }
+   #main #left{
+    width: 100%;
+    
+
+   } 
+   #main #right{
+    width: 100%;
+   }
+   #main #textCenter h1{
+        font-size:25px;
+   }
+   #main #textCenter h5{
+    opacity: .6;
+    font-weight: 50;
+    font-size: 12px;
+    padding-top: 10px;
+   }
+   #form h1{
+    font-size: 15px;
+    padding-left: 30px;
+    padding-bottom: 4px;
+   }
+   #form label{
+    font-size: 10px;
+   }
+   #form input{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    width: 80%;
+    opacity: .5;
+    color: black;
+    height: 10px;
+   }
+   #btn{
+    width: 50px;
+    height: 30px;
+    font-size: 10px;
+   }
+
+}
+
+/* #top-left{
+    background-color: peru;
+    width: 50%;
+    height: 100%;
+}
+#top-right{
+    background-color: blueviolet;
+    width: 50%;
+    height: 100%;
+} */
+
+/* #bottom{
+    height: 50%;
+    
+    background-image: url(Termite.png);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+} */
